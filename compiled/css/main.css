@@ -1,0 +1,43 @@
+@import 'base/normalize.css';
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+body {
+  color: #ac2c23;
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+.type--light {
+  color: #ffffff;
+}
+h2 {
+  color: #ac2c23;
+}
+.u-header {
+  height: 12em;
+  padding: 15px;
+  background: #ac2c23;
+}
