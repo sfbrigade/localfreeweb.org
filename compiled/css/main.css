@@ -1,28 +1,4 @@
 @import 'base/normalize.css';
-@import '../gvars/colors';
-
-@baseFontSize: 16px;
-@baseFontLeading: 26px;
-
-@baseFontFamily: ;
-
-body {
-  color: @baseDark;
-  font: @baseFontSize/@baseFontLeading Helvetica, Helvetica Neue, Arial;
-}
-
-.type--light {
-  color: @white;
-}
-
-h2 {
-  color: @baseDark;
-}
-
-.ct {
-  text-align: center;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -49,6 +25,19 @@ html {
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
+}
+body {
+  color: #ac2c23;
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+.type--light {
+  color: #ffffff;
+}
+h2 {
+  color: #ac2c23;
+}
+.ct {
+  text-align: center;
 }
 .space__bt--30 {
   margin-bottom: 30px;

@@ -9,7 +9,7 @@ var less = require('gulp-less');
 //});
 
 gulp.task('less', function () {
-  gulp.src('./src/css/**/*.less')
+  gulp.src('./src/css/main.less')
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
