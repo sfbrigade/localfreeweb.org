@@ -1,0 +1,18 @@
+.cf {
+  display: inline-block;
+}
+.cf:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+/* start commented backslash hack \*/
+* html .cf {
+  height: 1%;
+}
+.cf {
+  display: block;
+}

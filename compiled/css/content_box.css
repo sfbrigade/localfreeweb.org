@@ -1,0 +1,7 @@
+.a-rounded_box {
+  border-radius: 10px;
+  padding: 10px;
+}
+.a-rounded_box--white {
+  background: #fff;
+}

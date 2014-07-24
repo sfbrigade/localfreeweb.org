@@ -1,4 +1,28 @@
 @import 'base/normalize.css';
+@import '../gvars/colors';
+
+@baseFontSize: 16px;
+@baseFontLeading: 26px;
+
+@baseFontFamily: ;
+
+body {
+  color: @baseDark;
+  font: @baseFontSize/@baseFontLeading Helvetica, Helvetica Neue, Arial;
+}
+
+.type--light {
+  color: @white;
+}
+
+h2 {
+  color: @baseDark;
+}
+
+.ct {
+  text-align: center;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -26,18 +50,65 @@ html {
   background: #b3d4fc;
   text-shadow: none;
 }
-body {
-  color: #ac2c23;
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+.space__bt--30 {
+  margin-bottom: 30px;
 }
-.type--light {
-  color: #ffffff;
+.cf {
+  display: inline-block;
 }
-h2 {
-  color: #ac2c23;
+.cf:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
-.ct {
-  text-align: center;
+/* start commented backslash hack \*/
+* html .cf {
+  height: 1%;
+}
+.cf {
+  display: block;
+}
+.a-media {
+  margin: 10px;
+}
+.a-media--centered {
+  margin: 10px auto;
+}
+.a-media--80 {
+  width: 80%;
+}
+.a-media--70 {
+  width: 70%;
+}
+.a-media__mediaImg {
+  float: left;
+  margin-right: 10px;
+}
+.a-media__mediaImg img {
+  display: block;
+}
+.a-media__mediaBody {
+  overflow: hidden;
+  zoom: 1;
+}
+.a-media__mediaImg--switch {
+  float: right;
+  margin-left: 10px;
+}
+.a-media__mediaBody--switch {
+  margin-left: 5px;
+}
+.a-contentBox {
+  padding: 10px;
+}
+.a-contentBox--rnd {
+  border-radius: 10px;
+}
+.a-contentBox--white {
+  background: #ffffff;
 }
 .u-header {
   height: 12em;
@@ -49,6 +120,7 @@ h2 {
   margin: 20px 0;
   min-height: 200px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 .u-showcase--light {
   background: #eee2ca;
