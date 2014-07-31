@@ -1,6 +1,8 @@
 
 @import '../components/bootstrap/less/bootstrap.less';
 
+@import 'gvars/colors';
+
 @import 'base/globals';
 @import 'base/normalize.css';
 @import 'base/typography.less';
@@ -11,3 +13,57 @@
 
 @import 'molecule/header';
 @import 'molecule/showcase';
+
+.u-header {
+  min-height:100px;
+  height:100px;
+  margin-bottom:0;
+}
+
+.u-showcase {
+  background-image:url('/image/banner.png');
+  background-repeat:no-repeat;
+  min-height:300px;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+.u-showcase--light {
+  background-image:none;
+  min-height:400px;
+}
+
+h2.banner-text {
+  width:80%;
+  margin-left:260px;
+}
+
+.a-contentBox {
+  min-height:250px;
+  text-align:center;
+}
+
+h2.ct, heading h4 {
+  font-size:26pt;
+}
+
+.step-number {
+  background-color:#ccc;
+  border-radius:20px;
+  font-size:20pt;
+  min-height:40px;
+  margin:0 auto;
+  height:40px;
+  padding-top:5px;
+  width:40px;
+}
+
+img.a-media__mediaImg--switch {
+  display:none;
+}
+
+button.btn.btn-default {
+  color:white;
+  background-color:@baseDark;
+  width:140px;
+}
