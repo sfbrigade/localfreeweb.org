@@ -16,8 +16,15 @@ h1 {
 
 h2 {
   color: @baseDark;
-  font-size: 2.25em;
-  line-height: 1.44em;
+  font-size: 1.35em;
+  line-height: 1.50em;
+}
+
+@media (min-width: 750px) { 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.45em;
+  }
 }
 
 a {
@@ -37,14 +44,14 @@ a:hover {
 }
 
 .logo {
-  font-size: 3.350em;
+  font-size: 2.5em;
   margin: 10px;
   text-align: center; // TODO use mixin
 }
 
 @media (min-width: 750px) { 
   .logo {
-    font-size: 3.625em;
+    font-size: 3.125em;
     margin: 10px;
     text-align: left; // TODO use mixin
   }
