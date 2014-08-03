@@ -1,0 +1,36 @@
+
+@import '../gvars/colors';
+
+.a-contentBox {
+  .a-contentBox-x(10px);
+}
+
+.a-contextBox--20 {
+  .a-contentBox-x(20px);
+  min-height: 185px;
+  width: 80%;
+}
+
+@media (min-width: 550px) { 
+  .a-contextBox--20 {
+    width: 75%;
+  }
+}
+
+.a-contentBox-x(@padding) {
+  .centered;
+  padding: @padding;
+  text-align:center;
+}
+
+.a-contentBox--rnd {
+  .a-contentBox--rnd-x(10px);
+}
+
+.a-contentBox--rnd-x(@radius) {
+  border-radius: @radius;
+}
+
+.a-contentBox--white {
+  background: @white;
+}

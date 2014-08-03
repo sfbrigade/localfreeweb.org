@@ -1,0 +1,72 @@
+@import '../gvars/colors';
+
+@baseFontSize: 1em;
+@baseFontLeading: 1.625em;
+
+@baseFontFamily: 'Bitter', serif;
+
+body {
+  color: @baseDark;
+  font: @baseFontSize/@baseFontLeading Helvetica, Helvetica Neue, Arial;
+  font-family: @baseFontFamily;
+}
+
+h1 {
+}
+
+h2 {
+  color: @baseDark;
+  font-size: 1.45em;
+  line-height: 1.50em;
+}
+
+@media (min-width: 750px) { 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.45em;
+    margin-top: 30px;
+  }
+}
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1.50em;
+}
+
+@media (min-width: 750px) { 
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.55em;
+  }
+}
+
+a {
+  color: @baseDark;
+
+}
+a:hover {
+  color: @white;
+}
+
+.type--light {
+  color: @white;
+}
+
+.ct {
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.5em;
+  margin: 10px;
+  text-align: center; // TODO use mixin
+}
+
+@media (min-width: 750px) { 
+  .logo {
+    font-size: 3.125em;
+    margin: 10px;
+    text-align: left; // TODO use mixin
+  }
+}
+
