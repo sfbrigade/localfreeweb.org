@@ -6,12 +6,14 @@
 @import 'base/globals';
 @import 'base/normalize.css';
 @import 'base/typography.less';
+@import 'util/floats';
 @import 'util/spacing';
 
 @import 'atom/media';
 @import 'atom/content_box';
 
 @import 'molecule/header';
+@import 'molecule/navbar';
 @import 'molecule/showcase';
 
 .u-header {
@@ -20,23 +22,6 @@
   margin-bottom:0;
 }
 
-.u-showcase {
-  background-image:url('/image/banner.png');
-  background-repeat:no-repeat;
-  min-height:300px;
-  margin-top:0;
-  margin-bottom:0;
-}
-
-.u-showcase--light {
-  background-image:none;
-  min-height:400px;
-}
-
-h2.banner-text {
-  width:80%;
-  margin-left:260px;
-}
 
 .a-contentBox {
   min-height:250px;

@@ -1,7 +1,7 @@
 @import '../gvars/colors';
 
-@baseFontSize: 16px;
-@baseFontLeading: 26px;
+@baseFontSize: 1em;
+@baseFontLeading: 1.625em;
 
 @baseFontFamily: 'Bitter', serif;
 
@@ -11,14 +11,41 @@ body {
   font-family: @baseFontFamily;
 }
 
-.type--light {
-  color: @white;
+h1 {
 }
 
 h2 {
   color: @baseDark;
+  font-size: 2.25em;
+  line-height: 1.44em;
+}
+
+a {
+  color: @baseDark;
+
+}
+a:hover {
+  color: @white;
+}
+
+.type--light {
+  color: @white;
 }
 
 .ct {
   text-align: center;
+}
+
+.logo {
+  font-size: 3.625em;
+  margin: 10px;
+  text-align: center; // TODO use mixin
+}
+
+@media (min-width: 750px) { 
+  .logo {
+    font-size: 3.625em;
+    margin: 10px;
+    text-align: left; // TODO use mixin
+  }
 }
