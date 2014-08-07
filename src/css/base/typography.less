@@ -16,24 +16,22 @@ h1 {
 
 h2 {
   color: @baseDark;
-  font-size: 1.45em;
+  font-size: 1.55em;
   line-height: 1.50em;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 @media (min-width: 750px) {
   h2 {
     font-size: 2.25em;
     line-height: 1.45em;
-    margin-top: 30px;
   }
 }
 
 h3 {
   font-size: 1.25em;
   line-height: 1.50em;
-  margin-top: 0;
+  margin: 0;
 }
 
 @media (min-width: 750px) {
@@ -43,16 +41,32 @@ h3 {
   }
 }
 
+p, a, span {
+  font-size: 0.95em;
+}
+
 a {
   color: @baseDark;
-
+  text-decoration: underline;
 }
 a:hover {
   color: @white;
+  color: @baseDarkSecondary;
 }
 
-.type--light {
-  color: @white;
+/**
+ * Children type light: The children of this element should be white colored.
+ */
+.c-type--light {
+  a, p, span, h1, h2, h3, h4 {
+    color: @white;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  a:active {
+    color: @baseDarkSecondary;
+  }
 }
 
 .ct {
@@ -73,13 +87,16 @@ a:hover {
   }
 }
 
-a {
-  text-decoration: underline;
-}
-a:hover {
-  color: @baseDarkSecondary;
-}
-
-p, a {
-  font-size: 0.95em;
+/**
+ * A nav ele is a link or a parent of links that should not be styled as
+ * links within text, but as distinct navigation elements
+ */
+.nav__ele {
+  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 }

@@ -6204,22 +6204,20 @@ body {
 }
 h2 {
   color: #ac2c23;
-  font-size: 1.45em;
+  font-size: 1.55em;
   line-height: 1.50em;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 @media (min-width: 750px) {
   h2 {
     font-size: 2.25em;
     line-height: 1.45em;
-    margin-top: 30px;
   }
 }
 h3 {
   font-size: 1.25em;
   line-height: 1.50em;
-  margin-top: 0;
+  margin: 0;
 }
 @media (min-width: 750px) {
   h3 {
@@ -6227,14 +6225,36 @@ h3 {
     line-height: 1.55em;
   }
 }
+p,
+a,
+span {
+  font-size: 0.95em;
+}
 a {
   color: #ac2c23;
+  text-decoration: underline;
 }
 a:hover {
   color: #ffffff;
+  color: #3366cc;
 }
-.type--light {
+/**
+ * Children type light: The children of this element should be white colored.
+ */
+.c-type--light a,
+.c-type--light p,
+.c-type--light span,
+.c-type--light h1,
+.c-type--light h2,
+.c-type--light h3,
+.c-type--light h4 {
   color: #ffffff;
+}
+.c-type--light a:hover {
+  text-decoration: none;
+}
+.c-type--light a:active {
+  color: #3366cc;
 }
 .ct {
   text-align: center;
@@ -6251,15 +6271,18 @@ a:hover {
     text-align: left;
   }
 }
-a {
+/**
+ * A nav ele is a link or a parent of links that should not be styled as
+ * links within text, but as distinct navigation elements
+ */
+.nav__ele {
+  text-decoration: none;
+}
+.nav__ele a {
+  text-decoration: none;
+}
+.nav__ele a:hover {
   text-decoration: underline;
-}
-a:hover {
-  color: #3366cc;
-}
-p,
-a {
-  font-size: 0.95em;
 }
 .float--right {
   float: right;
@@ -6341,6 +6364,12 @@ a {
   text-align: center;
   width: 50px;
 }
+/**
+ * An island is simple a box with padding on all sides
+ */
+.a-island--20 {
+  padding: 20px;
+}
 .a-contentBox {
   margin: 0 auto;
   padding: 10px;
@@ -6367,6 +6396,10 @@ a {
 .a-contentBox--dark {
   background: #ac2c23;
 }
+/**
+ * A chatbox is similiar to a rounded content box but with handles in specified
+ * locations specifing it as a traditional internet chat.
+ */
 .m-chatbox {
   padding: 20px;
   text-align: center;
@@ -6418,25 +6451,29 @@ a {
     height: 100px;
   }
 }
-.m-navbar__element {
+/** A nav bar is a group of links placed side by side in a bar
+ */
+.m-navbar__ele {
   margin-bottom: 0;
   margin-top: 1.45em;
   padding-right: 10px;
   text-decoration: none;
 }
-.m-navbar__element a {
+.m-navbar__ele a {
   text-decoration: none;
 }
-.m-nav--secondary a {
-  text-decoration: none;
+.m-navbar__ele a:hover {
+  text-decoration: underline;
 }
+/**
+ * A showcase is a large display incorperating a full height image with
+ * or multiple images side by side.
+ */
 .u-showcase--light {
   background: #eee2ca;
-  background-image: none;
-  min-height: 400px;
 }
 .u-showcase__text {
-  margin-top: 10px;
+  margin: 20px 0;
   padding: 20px 0;
   text-align: center;
 }
@@ -6444,6 +6481,15 @@ a {
   .u-showcase__text {
     margin-top: 40px;
   }
+}
+/**
+ * A section is a part of the site set to be visually distinct from the rest.
+ */
+.u-section {
+  padding: 20px 0;
+}
+.u-section--light {
+  background: #eee2ca;
 }
 button.btn.btn-default {
   color: white;

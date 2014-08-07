@@ -1,23 +1,36 @@
 
 @import '../gvars/colors';
 
+/**
+ * A showcase is a large display incorperating a full height image with
+ * or multiple images side by side.
+ */
 .u-showcase {
 }
 
 .u-showcase--light {
   background: @baseLight;
-  background-image:none;
-  min-height:400px;
 }
 
 .u-showcase__text {
-  margin-top: 10px;
+  margin: 20px 0;
   padding: 20px 0;
   text-align: center; // Use mixin
 }
 
-@media (min-width: 750px) { 
+@media (min-width: 750px) {
   .u-showcase__text {
     margin-top: 40px;
   }
+}
+
+/**
+ * A section is a part of the site set to be visually distinct from the rest.
+ */
+.u-section {
+  padding: 20px 0;
+}
+
+.u-section--light {
+  background: @baseLight;
 }

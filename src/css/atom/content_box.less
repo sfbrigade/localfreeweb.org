@@ -1,6 +1,17 @@
 
 @import '../gvars/colors';
 
+/**
+ * An island is simple a box with padding on all sides
+ */
+.a-island-x(@padding) {
+  padding: @padding;
+}
+
+.a-island--20 {
+  .a-island-x(20px)  ;
+}
+
 .a-contentBox {
   .a-contentBox-x(10px);
 }
@@ -19,7 +30,7 @@
 
 .a-contentBox-x(@padding) {
   .centered;
-  padding: @padding;
+  .a-island-x(@padding);
   text-align:center;
 }
 
