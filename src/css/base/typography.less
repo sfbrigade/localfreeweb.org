@@ -18,9 +18,11 @@ h2 {
   color: @baseDark;
   font-size: 1.45em;
   line-height: 1.50em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-@media (min-width: 750px) { 
+@media (min-width: 750px) {
   h2 {
     font-size: 2.25em;
     line-height: 1.45em;
@@ -31,9 +33,10 @@ h2 {
 h3 {
   font-size: 1.25em;
   line-height: 1.50em;
+  margin-top: 0;
 }
 
-@media (min-width: 750px) { 
+@media (min-width: 750px) {
   h3 {
     font-size: 1.5em;
     line-height: 1.55em;
@@ -62,7 +65,7 @@ a:hover {
   text-align: center; // TODO use mixin
 }
 
-@media (min-width: 750px) { 
+@media (min-width: 750px) {
   .logo {
     font-size: 3.125em;
     margin: 10px;
@@ -70,3 +73,9 @@ a:hover {
   }
 }
 
+a {
+  text-decoration: underline;
+}
+a:hover {
+  color: @baseDarkSecondary;
+}

@@ -6191,6 +6191,12 @@ html {
   background: #b3d4fc;
   text-shadow: none;
 }
+ul {
+  padding-left: 5px;
+}
+li {
+  list-style: none;
+}
 body {
   color: #ac2c23;
   font: 1em/1.625em Helvetica, Helvetica Neue, Arial;
@@ -6200,6 +6206,8 @@ h2 {
   color: #ac2c23;
   font-size: 1.45em;
   line-height: 1.50em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 @media (min-width: 750px) {
   h2 {
@@ -6211,6 +6219,7 @@ h2 {
 h3 {
   font-size: 1.25em;
   line-height: 1.50em;
+  margin-top: 0;
 }
 @media (min-width: 750px) {
   h3 {
@@ -6241,6 +6250,12 @@ a:hover {
     margin: 10px;
     text-align: left;
   }
+}
+a {
+  text-decoration: underline;
+}
+a:hover {
+  color: #3366cc;
 }
 .float--right {
   float: right;
@@ -6345,6 +6360,9 @@ a:hover {
 .a-contentBox--white {
   background: #ffffff;
 }
+.a-contentBox--dark {
+  background: #ac2c23;
+}
 .m-chatbox {
   padding: 20px;
   text-align: center;
@@ -6400,6 +6418,10 @@ a:hover {
   margin-bottom: 0;
   margin-top: 1.45em;
   padding-right: 10px;
+  text-decoration: none;
+}
+.m-navbar__element a {
+  text-decoration: none;
 }
 .u-showcase--light {
   background: #eee2ca;
