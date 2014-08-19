@@ -6284,6 +6284,9 @@ a:hover {
 .nav__ele a:hover {
   text-decoration: underline;
 }
+.c-type--light .nav__ele a {
+  color: #eee2ca;
+}
 .float--right {
   float: right;
 }
