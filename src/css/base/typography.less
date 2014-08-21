@@ -91,6 +91,7 @@ a:hover {
  * A nav ele is a link or a parent of links that should not be styled as
  * links within text, but as distinct navigation elements
  */
+// TODO this does't fit in very well and is confusing
 .nav__ele {
   text-decoration: none;
   a {
@@ -98,5 +99,10 @@ a:hover {
   }
   a:hover {
     text-decoration: underline;
+  }
+}
+.c-type--light .nav__ele {
+  a {
+    color: @baseLight;
   }
 }
