@@ -36,6 +36,6 @@ gulp.task('default', ['less'], function () {
       root: './'
     }).listen(port);
     opener('http://localhost:'+port);
-  })
+  });
 
 });

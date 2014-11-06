@@ -1,0 +1,19 @@
+/*
+ * Wraps an iframe video in a responsive div.
+ *
+ * http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+ */
+
+.video_wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video_wrapper .video_wrapper__frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
