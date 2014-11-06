@@ -6500,11 +6500,12 @@ a:hover {
  * http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
  */
 .video_wrapper {
+  height: 0;
+  overflow: hidden;
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 */
   padding-top: 25px;
-  height: 0;
 }
 .video_wrapper .video_wrapper__frame {
   position: absolute;
